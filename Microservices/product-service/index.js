@@ -8,7 +8,7 @@ const PORT = 8002;
 app.use(cors());
 
 // MongoDB connection URI
-const uri = 'mongodb://localhost:27017/e-commerce';
+const uri = 'mongodb://mongo-service:27017/e-commerce';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db;
